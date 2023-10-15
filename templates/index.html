@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess My Number</title>
+    <meta name="description" content="Number Guessing Game with Flask">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+  </head>
+  <body>
+    <h1>Welcome to the Guess My Number Game</h1>
+
+    <p>Guess a number by clicking a link.</p>
+    <p>Try to guess the right one!</p>
+
+    <p>Click to get started: <a href="/game"> Start Game </a></p>
+  </body>
+</html>

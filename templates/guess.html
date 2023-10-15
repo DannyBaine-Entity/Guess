@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guess My Number - Guess Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='guess.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <h2>Your Guess: {{ number }}</h2>
+    <p>{{ feedback }}</p>
+    <p>Click <a href="/game">here</a> to guess another number.</p>
+    <button type="button" id="hint-button">Get Hint</button>
+    <div id="hint" style="display: none;">There is no Hint, guess it right.</div>
+    <script>
+        document.getElementById('hint-button').addEventListener('click', function () {
+            document.getElementById('hint').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0af; /* A different color for headings */
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0af; /* A different color for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}

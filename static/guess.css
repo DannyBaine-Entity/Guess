@@ -1,0 +1,39 @@
+body {
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #0af; /* A different color for headings */
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0af; /* A different color for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #0af; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08c; /* Button background color on hover */
+}
+
+#hint {
+    color: #0af; /* Color for the hint text */
+    display: none;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guess My Number - Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='game.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <h2>Guess the Number</h2>
+    <p>Click a number to make your guess:</p>
+    <ul>
+        {% for number in range(1, 101) %}
+        <li><a href="/guess/{{ number }}">{{ number }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
